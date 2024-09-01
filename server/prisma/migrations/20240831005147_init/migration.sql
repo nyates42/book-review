@@ -1,0 +1,22 @@
+-- CreateTable
+CREATE TABLE "Book" (
+    "Id" SERIAL NOT NULL,
+    "Title" VARCHAR(512) NOT NULL,
+    "Description" VARCHAR(1028) NOT NULL,
+    "AddedDate" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "Book_pkey" PRIMARY KEY ("Id")
+);
+
+-- CreateTable
+CREATE TABLE "BookReview" (
+    "Id" SERIAL NOT NULL,
+    "Review" VARCHAR(1028) NOT NULL,
+    "AddedDate" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "BookID" INTEGER NOT NULL,
+
+    CONSTRAINT "BookReview_pkey" PRIMARY KEY ("Id")
+);
+
+-- AddForeignKey
+ALTER TABLE "BookReview" ADD CONSTRAINT "BookReview_BookID_fkey" FOREIGN KEY ("BookID") REFERENCES "Book"("Id") ON DELETE RESTRICT ON UPDATE CASCADE;
