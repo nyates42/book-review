@@ -47,5 +47,6 @@ The backend server is running on a different port. You can view the API spec at:
 ##### How to run tests:
 With the container still running;
 1. Open terminal in root directory then go to server directory `cd server`
+2. Install the dependencies `npm i`
 2. Run the command `npm run test:e2e`
 3. Refresh the React application front-end to see the new book was added (you will also see the test output in the terminal window)
