@@ -81,7 +81,7 @@ export const AddNewReviewModal: React.FC<AddNewReviewModalProps> = ({ bookID, on
 							<BookIcon color="primary" sx={{ fontSize: 60 }} />
 						</Grid>
 						<Typography align="center" variant="h4">
-							Add Book
+							Add Review
 						</Typography>
 					</Stack>
 					<Formik initialValues={initialValues} validationSchema={interestHoldSchema} onSubmit={handleSubmit} validateOnChange validateOnBlur>

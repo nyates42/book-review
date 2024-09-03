@@ -41,7 +41,7 @@ The backend server is running on a different port. You can view the API spec at:
 - ***Typescript***: NestJs comes with TS out of the box so this was the main reason Nest was chosen
 - ***Swagger***: Used to document the API
 - ***Supertest***: NestJs also comes with Supertest out of the box to perform E2E tests
-- ***Prisma***: Used to handle ther Postgres DB. It has been used to control the schema, peform seeding and acts as the ORM to keep type safety across the entire application
+- ***Prisma***: Used to handle the Postgres DB. It has been used to control the schema, peform seeding and acts as the ORM to keep type safety across the entire application
 ##### API Testing:
 - Test that a book can be successfully created
 ##### How to run tests:
